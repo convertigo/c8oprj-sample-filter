@@ -36,11 +36,21 @@ title: First page
     ↓BarTitle [ngx.components.UIDynamicElement-1491634265317]: 
       beanData: '{"ionBean":"BarTitle"}'
       tagName: ion-title
-      ↓Text [ngx.components.UIText-1491634275121]: 
-        textValue: 
-          - xmlizable: 
-            - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
-            - MobileSmartSourceType: plain:Page
+      ↓SearchBar [ngx.components.UIDynamicElement-1682596499819]: 
+        beanData: '{"ionBean":"Searchbar"}'
+        tagName: ion-searchbar
+        ↓attr [ngx.components.UIControlEvent-1682596515035]: 
+          attrName: (ionInput)
+          eventName: ionInput
+          ↓CallSequence [ngx.components.UIDynamicAction-1682596541834]: 
+            beanData: '{"ionBean":"CallSequenceAction","requestable":"plain:filter.get_people"}'
+            tagName: CallSequence
+            ↓filter [ngx.components.UIControlVariable-1682596549355]: 
+              comment: new variable
+              varValue: 
+                - xmlizable: 
+                  - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+                  - MobileSmartSourceType: source:{"filter":"Action","project":"filter","input":"","model":{"data":[{"priority":1682596515035,"rootEvent":true,"pageLocals":false}],"path":"?.out?.target?.value","prefix":"","suffix":"","custom":"","useCustom":false}}
     ↓ButtonSet2 [ngx.components.UIDynamicElement-1588170811054]: 
       beanData: '{"ionBean":"ButtonSet","SetPosition":"plain:end"}'
       tagName: ion-buttons
@@ -60,6 +70,110 @@ title: First page
   beanData: '{"ionBean":"Content"}'
   comment: Page content
   tagName: ion-content
+  ↓ListContainer1 [ngx.components.UIDynamicElement-1682603840627]: 
+    beanData: '{"ionBean":"List"}'
+    tagName: ion-list
+    ↓GenericItem [ngx.components.UIDynamicElement-1682603924189]: 
+      beanData: '{"ionBean":"GenericItem"}'
+      tagName: ion-item
+      ↓Label [ngx.components.UIDynamicElement-1682603924186]: 
+        beanData: '{"ionBean":"Label"}'
+        tagName: ion-label
+        ↓some_text [ngx.components.UIText-1682603924188]: 
+          textValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+              - MobileSmartSourceType: plain:filter by 'title'
+      ↓SelectContainer [ngx.components.UIDynamicElement-1682603862163]: 
+        beanData: '{"ionBean":"Select","ControlName":"plain:name1682603862163"}'
+        tagName: ion-select
+        ↓SelectOption [ngx.components.UIDynamicElement-1682603965892]: 
+          beanData: '{"ionBean":"SelectOption","Value":"plain:Mrs."}'
+          tagName: ion-select-option
+          ↓Madame [ngx.components.UIText-1682603984677]: 
+            textValue: 
+              - xmlizable: 
+                - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+                - MobileSmartSourceType: plain:Madame
+        ↓SelectOption1 [ngx.components.UIDynamicElement-1682603973749]: 
+          beanData: '{"ionBean":"SelectOption","Value":"plain:Mr."}'
+          tagName: ion-select-option
+          ↓Monsieur [ngx.components.UIText-1682603997600]: 
+            textValue: 
+              - xmlizable: 
+                - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+                - MobileSmartSourceType: plain:Monsieur
+        ↓attr [ngx.components.UIControlEvent-1682604073683]: 
+          attrName: (ionChange)
+          eventName: ionChange
+          ↓CallSequence [ngx.components.UIDynamicAction-1682604104370]: 
+            beanData: '{"ionBean":"CallSequenceAction","requestable":"plain:filter.get_people"}'
+            tagName: CallSequence
+            ↓filter [ngx.components.UIControlVariable-1682604110895]: 
+              comment: new variable
+              varValue: 
+                - xmlizable: 
+                  - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+                  - MobileSmartSourceType: source:{"filter":"Action","project":"filter","input":"","model":{"data":[{"priority":1682604073683,"rootEvent":true,"pageLocals":false}],"path":"?.out?.detail?.value","prefix":"","suffix":"","custom":"","useCustom":false}}
+            ↓type [ngx.components.UIControlVariable-1682604110897]: 
+              comment: new variable
+              varValue: 
+                - xmlizable: 
+                  - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+                  - MobileSmartSourceType: plain:title
+  ↓ListContainer [ngx.components.UIDynamicElement-1682596708059]: 
+    beanData: '{"ionBean":"List"}'
+    tagName: ion-list
+    ↓ListHeader [ngx.components.UIDynamicElement-1682596708044]: 
+      beanData: '{"ionBean":"Listheader"}'
+      tagName: ion-list-header
+      ↓Label [ngx.components.UIDynamicElement-1682596708046]: 
+        beanData: '{"ionBean":"Label"}'
+        tagName: ion-label
+        ↓Heading [ngx.components.UIDynamicTag-1682596708048]: 
+          beanData: '{"ionBean":"Heading"}'
+          tagName: h1
+          ↓some_text [ngx.components.UIText-1682596708050]: 
+            textValue: 
+              - xmlizable: 
+                - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+                - MobileSmartSourceType: plain:People
+    ↓tag [ngx.components.UIControlDirective-1682596708052]: 
+      directiveIndexName: idx
+      directiveItemName: item
+      directiveSource: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+          - MobileSmartSourceType: source:{"filter":"Sequence","project":"filter","input":"","model":{"data":[{"sequence":"filter.get_people","marker":""}],"path":"?.array","prefix":"","suffix":"","custom":"","useCustom":false}}
+      ↓ListItem [ngx.components.UIDynamicElement-1682596708054]: 
+        beanData: '{"ionBean":"ListItem"}'
+        tagName: ion-item
+        ↓Label [ngx.components.UIDynamicElement-1682596708056]: 
+          beanData: '{"ionBean":"Label"}'
+          tagName: ion-label
+          ↓some_text2 [ngx.components.UIText-1682603641400]: 
+            textValue: 
+              - xmlizable: 
+                - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+                - MobileSmartSourceType: source:{"filter":"Iteration","project":"filter","input":"","model":{"data":[{"priority":1682596708052}],"path":"?.root?.People?.firstname","prefix":"","suffix":"","custom":"' ' + item1682596708052?.People?.title","useCustom":true}}
+          ↓some_text [ngx.components.UIText-1682596708058]: 
+            textValue: 
+              - xmlizable: 
+                - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+                - MobileSmartSourceType: source:{"filter":"Iteration","project":"filter","input":"","model":{"data":[{"priority":1682596708052}],"path":"?.root?.People?.firstname","prefix":"","suffix":"","custom":"' ' + item1682596708052?.People?.firstname","useCustom":true}}
+          ↓some_text1 [ngx.components.UIText-1682603515203]: 
+            textValue: 
+              - xmlizable: 
+                - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+                - MobileSmartSourceType: source:{"filter":"Iteration","project":"filter","input":"","model":{"data":[{"priority":1682596708052}],"path":"?.root?.People?.lastname","prefix":"","suffix":"","custom":"' ' + item1682596708052?.People?.lastname","useCustom":true}}
+          ↓Paragraph [ngx.components.UIDynamicElement-1682603560839]: 
+            beanData: '{"ionBean":"Paragraph"}'
+            tagName: p
+            ↓some_text [ngx.components.UIText-1682603560838]: 
+              textValue: 
+                - xmlizable: 
+                  - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+                  - MobileSmartSourceType: source:{"filter":"Iteration","project":"filter","input":"","model":{"data":[{"priority":1682596708052}],"path":"?.root?.People?.email","prefix":"","suffix":"","custom":"item1682596708052?.People?.email","useCustom":true}}
 ↓Footer [ngx.components.UIDynamicElement-1491634242460]: 
   beanData: '{"ionBean":"Footer"}'
   comment: Page footer
@@ -89,3 +203,7 @@ title: First page
             - xmlizable: 
               - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
               - MobileSmartSourceType: plain:Action 2
+↓PageEvent [ngx.components.UIPageEvent-1682596472573]: 
+  ↓CallSequence [ngx.components.UIDynamicAction-1682596483759]: 
+    beanData: '{"ionBean":"CallSequenceAction","requestable":"plain:filter.get_people"}'
+    tagName: CallSequence

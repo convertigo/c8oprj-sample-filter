@@ -1,0 +1,24 @@
+↓Read_XML [steps.ReadXMLStep-1682596410797]: 
+  dataFile: '''.//People_10.xml'''
+↓Array [steps.JsonArrayStep-1682596410800]: 
+  ↓Copy [steps.XMLCopyStep-1682596410803]: 
+    sourceDefinition: 
+      - xmlizable: 
+        - ↑classname: com.twinsoft.convertigo.beans.common.XMLVector
+        - com.twinsoft.convertigo.beans.common.XMLVector: 
+          - java.lang.String: 
+            - ↑value: 1682596410797
+          - java.lang.String: 
+            - ↑value: ./People[contains(translate({{{type}}},'abcdefghijklmnopqrstuvwxyz','ABCDEFGHIJKLMNOPQRSTUVWXYZ'), "{{{filter.toUpperCase()}}}")]
+↓filter [variables.RequestableVariable-1682596410806]: 
+  value: 
+↓type [variables.RequestableVariable-1682597053788]: 
+  value: lastname
+↓Test_Case_mey [core.TestCase]: 
+  ↓filter [variables.TestCaseVariable-1682596410810]: 
+    value: me
+↓Test_Case_type [core.TestCase]: 
+  ↓type [variables.TestCaseVariable-1682597484526]: 
+    value: title
+  ↓filter [variables.TestCaseVariable-1682597484524]: 
+    value: Mr.

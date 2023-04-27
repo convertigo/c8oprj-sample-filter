@@ -1,0 +1,24 @@
+↓Read_XML [steps.ReadXMLStep-1682603438448]: 
+  dataFile: '''.//People_10.xml'''
+↓Array [steps.JsonArrayStep-1682603438451]: 
+  ↓Copy [steps.XMLCopyStep-1682603438454]: 
+    sourceDefinition: 
+      - xmlizable: 
+        - ↑classname: com.twinsoft.convertigo.beans.common.XMLVector
+        - com.twinsoft.convertigo.beans.common.XMLVector: 
+          - java.lang.String: 
+            - ↑value: 1682603438448
+          - java.lang.String: 
+            - ↑value: ./People
+↓filter [variables.RequestableVariable-1682603438457]: 
+  value: 
+↓type [variables.RequestableVariable-1682603438460]: 
+  value: lastname
+↓Test_Case_mey [core.TestCase]: 
+  ↓filter [variables.TestCaseVariable-1682603438464]: 
+    value: me
+↓Test_Case_type [core.TestCase]: 
+  ↓type [variables.TestCaseVariable-1682603438468]: 
+    value: title
+  ↓filter [variables.TestCaseVariable-1682603438471]: 
+    value: Mr.
